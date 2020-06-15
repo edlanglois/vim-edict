@@ -37,12 +37,12 @@ highlight link edictHeaderFunction PreProc
 syntax match edictNumber "\v<\d+(\.\d*)?>"
 highlight link edictNumber Number
 
-syntax region edictString start=/\v"/ skip=/\v\\./ end=/\v"/
+syntax region edictString start=/\v"/ skip=/\v\\./ end=/\v"/ oneline
 highlight link edictString String
-syntax region edictRegex start=/\v\// skip=/\v\\./ end=/\v\//
+syntax region edictRegex start=/\v\// skip=/\v\\./ end=/\v\// oneline
 highlight link edictRegex String
 
-syntax region edictBracedIdentifier start=/\v\{/ skip=/\v\\./ end=/\v\}/
+syntax region edictBracedIdentifier start=/\v\{/ skip=/\v\\./ end=/\v\}/ oneline
 highlight link edictBracedIdentifier edictIdentifier
 syntax match edictBareIdentifier "\v<\h\w*>"
 highlight link edictBareIdentifier edictIdentifier
