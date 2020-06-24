@@ -31,8 +31,8 @@ syntax match edictOperator "\v\<\="
 syntax match edictOperator "\v\>\="
 highlight link edictOperator Operator
 
-syntax match edictHeaderFunction /^@\h\w*\>/
-highlight link edictHeaderFunction PreProc
+syntax match edictDirective /\v^\@\@?\h\w*>/
+highlight link edictDirective PreProc
 
 syntax match edictNumber "\v<\d+(\.\d*)?>"
 highlight link edictNumber Number
