@@ -7,10 +7,6 @@ highlight link edictConditional Conditional
 syntax keyword edictBoolean true false
 highlight link edictBoolean Boolean
 
-syntax keyword edictFunction read_date
-syntax keyword edictFunction num
-highlight link edictFunction Function
-
 syntax match edictComment "\v#.*$"
 highlight link edictComment Comment
 
@@ -47,5 +43,8 @@ highlight link edictBracedIdentifier edictIdentifier
 syntax match edictBareIdentifier "\v<\h\w*>"
 highlight link edictBareIdentifier edictIdentifier
 highlight link edictIdentifier Identifier
+
+syntax match edictFunction "\v<\h\w*\ze\("
+highlight link edictFunction Function
 
 let b:current_syntax = "edict"
